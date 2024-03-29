@@ -5,7 +5,6 @@ metadata:
   labels:
     app: thelounge
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: thelounge
