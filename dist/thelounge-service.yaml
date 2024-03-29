@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: thelounge-service
+  namespace: thelounge
 spec:
   type: LoadBalancer
   selector:
