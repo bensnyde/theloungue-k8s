@@ -11,4 +11,4 @@ Kubernetes manifests for The Lounge IRC client
 `kubectl exec --user node -it [pod_name] thelounge add [username]`
 
 ### Open The Lounge
-http://[external_address]:8000
+[http://[external_address]:8000](http://[external_address]:8000)
