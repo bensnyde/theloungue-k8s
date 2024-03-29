@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: thelounge-deployment
+  labels:
+    app: thelounge
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: thelounge
+  template:
+    metadata:
+      labels:
+        app: thelounge
+    spec:
+      containers:
+        - name: thelounge
+          image: thelounge/thelounge:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9000
