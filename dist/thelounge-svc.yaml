@@ -1,0 +1,15 @@
+##################################################################################################
+# Service
+##################################################################################################
+kind: Service
+apiVersion: v1
+metadata:
+  name: thelounge-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: thelounge
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 9000
